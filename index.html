@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login page</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="container__left">
+				<img
+					src="https://source.unsplash.com/random/?Nature/"
+					alt="container image"
+				/>
+			</div>
+			<div class="container__right">
+				<h2 class="container__heading">
+					Register Now to explore endless opportunities!
+				</h2>
+
+				<form>
+					<div class="form__container">
+						<fieldset>
+							<label for="first_name">First Name</label>
+							<input type="text" id="first_name" name="first_name" required />
+						</fieldset>
+
+						<fieldset>
+							<label for="last_name">Last Name</label>
+							<input type="text" id="last_name" name="last_name" required />
+						</fieldset>
+
+						<fieldset>
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required />
+						</fieldset>
+
+						<fieldset>
+							<label for="number">Phone Number</label>
+							<input type="tel" name="number" id="number" required />
+						</fieldset>
+
+						<fieldset>
+							<label for="password">Create Password</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								minlength="8"
+								required
+							/>
+						</fieldset>
+
+						<fieldset>
+							<label for="password_confirm">Confirm Password</label>
+							<input
+								type="password"
+								name="password_confirm"
+								id="password_confirm"
+								required
+							/>
+						</fieldset>
+					</div>
+					<button type="submit" class="submit_btn">Create Account</button>
+					<p>
+						Already have an account?
+						<a href="#">Login</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

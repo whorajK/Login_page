@@ -1,0 +1,142 @@
+/* RESET AND GENERAL STYLES*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fefefe;
+	color: #0c0c0c;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #00b3ff;
+	text-decoration: none;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	border: 2px solid gray;
+	outline: none;
+	padding: 0.5rem 1rem;
+	transition: all ease 0.5s;
+}
+
+input:focus,
+input:hover {
+	border: 2px solid dodgerblue;
+}
+
+button {
+	background: transparent;
+	border-radius: 0.5em;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	outline: none;
+	padding: 1rem;
+	transition: all ease 0.5s;
+}
+
+/* CONTAINER AND FORM ELEMENTS */
+.container {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container__left {
+	flex: 1 0 40%;
+}
+
+.container__left > img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.container__right {
+	background-color: #faebf2;
+	padding: 5rem;
+}
+
+.container__heading {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	text-transform: uppercase;
+}
+
+.form__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem;
+	margin: 3rem auto;
+}
+
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+}
+
+.submit_btn {
+	background: dodgerblue;
+	border: 2px solid dodgerblue;
+	color: #fff;
+	margin: 2rem auto;
+}
+
+.submit_btn:hover {
+	background: transparent;
+	color: dodgerblue;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+	.container__left {
+		flex-basis: 35%;
+	}
+
+	.container__right {
+		padding: 2rem;
+	}
+
+	.container__heading {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 429px) {
+	.container__left {
+		flex-basis: 20%;
+	}
+
+	.container__right {
+		padding: 1rem 2rem;
+	}
+
+	.container__heading {
+		font-size: 1.3rem;
+	}
+
+	.form__container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1rem;
+	}
+
+	input {
+		font-size: 0.9rem;
+		padding: 0.5rem;
+	}
+
+	.submit_btn {
+		margin-top: 0;
+	}
+}
